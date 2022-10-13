@@ -33,7 +33,12 @@ public class Java_main {
         System.out.println("---------------------------------");
         threeclocks.settime(Clock_int.types_arrow.H, 10);
         System.out.println(threeclocks);
-        System.out.println("---------------------------------");
+        System.out.println("-----------------LIST----------------");
+        shop s = new shop();
+        System.out.println(s);
+        System.out.println("Max cost: " + s.getMaxCost());
+        System.out.println("Max count name: " + s.getMaxCountName());
+        s.printAllMarksOneCount();
     }
 }
 
