@@ -87,9 +87,6 @@ public class shop {
 
     }
 
-    public void settime() {
-
-    }
 
     @Override
     public String toString() {
