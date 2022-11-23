@@ -33,8 +33,8 @@ public class Clock implements Clock_int {
         }
         if (aH >= 0 ) {
             this.arrowHours += aH;
-            if (this.arrowHours > 12) {
-                this.arrowHours %= 12;
+            if (this.arrowHours > 23) {
+                this.arrowHours %= 24;
             }
         }
         else {
@@ -42,8 +42,8 @@ public class Clock implements Clock_int {
         }
         if (aM >= 0) {
             this.arrowMinuts += aM;
-            if (this.arrowMinuts > 12) {
-                this.arrowMinuts %= 12;
+            if (this.arrowMinuts > 59) {
+                this.arrowMinuts %= 60;
             }
         }
         else {
@@ -70,8 +70,8 @@ public class Clock implements Clock_int {
     public void plusTime(int aH, int aM){
         if (aH >= 0 ) {
             this.arrowHours += aH;
-            if (this.arrowHours > 12) {
-                this.arrowHours %= 12;
+            if (this.arrowHours > 23) {
+                this.arrowHours %= 24;
             }
         }
         else {
@@ -79,8 +79,8 @@ public class Clock implements Clock_int {
         }
         if (aM >= 0) {
             this.arrowMinuts += aM;
-            if (this.arrowMinuts > 12) {
-                this.arrowMinuts %= 12;
+            if (this.arrowMinuts > 59) {
+                this.arrowMinuts %= 60;
             }
         }
         else {
@@ -109,14 +109,14 @@ public class Clock implements Clock_int {
         if (value >= 0) {
             if (type == types_arrow.H) {
                 this.arrowHours = value;
-                if (this.arrowHours > 12) {
-                    this.arrowHours %= 12;
+                if (this.arrowHours > 23) {
+                    this.arrowHours %= 24;
                 }
             }
             else if (type == types_arrow.M) {
                 this.arrowMinuts = value;
-                if (this.arrowMinuts > 12) {
-                    this.arrowMinuts %= 12;
+                if (this.arrowMinuts > 59) {
+                    this.arrowMinuts %= 60;
                 }
             }
         }

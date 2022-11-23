@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Java_main {
     public static void main(String args[]){
+        GUI gui = new GUI();
+
+        //gui.GUI();
+
         System.out.println(java.time.LocalDateTime.now().getHour());
         Clock myclock = new Clock();
         myclock.PrintDisplay();
@@ -39,6 +43,13 @@ public class Java_main {
         System.out.println("Max cost: " + s.getMaxCost());
         System.out.println("Max count name: " + s.getMaxCountName());
         s.printAllMarksOneCount();
+
+        gui.setVisible(true);
+        gui.fillList(s);
+//        for(int i = 0; i < s.list.size(); i++){
+//            gui.addToList(s.list.get(i));
+//        }
+
     }
 }
 
