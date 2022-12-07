@@ -1,4 +1,6 @@
-public interface Clock_int {
+import java.io.Serializable;
+
+public interface Clock_int extends Serializable {
     public enum types_arrow {H,M,S}
     public int getCost();
     public String getName();
